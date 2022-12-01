@@ -1,0 +1,9 @@
+nav {
+    /* filter: drop-shadow(0 1px 3px rgb(141, 141, 141)); */
+    width: 100vw;
+    display: block;
+}
+
+.navbar-brand {
+    padding: 10px 40px;
+}
