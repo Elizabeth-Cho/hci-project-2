@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        HCI_HW
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>How can technology help education?</h1>
+    <h5> Shichang Ke, Elizabeth Cho, Abdullah Yousuf</h5>
+    <h3>Introduction</h3>
+    <p>One of the most drastic changes that this generation of students has experienced is the digitalization of
+        classrooms. It's amazing to think that the form of the classroom has not changed for years, but right now it's
+        undergoing a transformation gradually. Such a transformation was accelerated during the Covid years as students
+        and instructors were forced to take the class online. Although now, three years after the pandemic, the campus
+        is back to in-person again, we could not go back to the way it was before Covid. The online format of teaching
+        seems to have become an integral part of the modern education system. Now, accessibility to a stable internet
+        has become essential for students to receive an education (at least it is the case here at Johns Hopkins).
+        Therefore, we thought it'd be valuable to analyze the historical data on technology and education to evaluate
+        the correlation between them.</p>
+    <h3>The internet has become a essential infrastructure in the world</h3>
+    <p>In the early stages of the internet, accessibility was not as widely available. However, with technological
+        developments, this access has become more widespread. Similarly, access to mobile cellular subscriptions has
+        become more widely available. We wanted to initially assess the relationship between each country's GDP and the
+        percentage of the population with access to the internet as well as the number of mobile cellular subscriptions
+        per 100 people for 2000, 2018, and 2020 to assess trends when internet connections were not as necessary, before
+        Covid, and during Covid.<br>
+
+        In the 2000s, access to the internet was not as much of as a necessity as it is in more recent years and we see
+        a stronger correlation between the country's GDP and the percentage of the population with access to the
+        internet and the number of mobile cellular subscriptions per 100 people. This correlation weakens in 2018 and
+        2020, where a country's GDP is not as strong of an indicator of how much of the population has access to
+        internet or cellular subscriptions. Overall, more people have access to these resources as the years have
+        progressed and it has become prevalent in our lives.<br>
+
+        In the maps below, countries that are colored in black may not have data available for that statistic.</p>
+
+    <div id="observablehq-viewof-Year-4b0de616"></div>
+    <div class="container" style="display: flex; height: 80px;">
+        <div style="width: 30%; margin-left: 2%; margin-right: 3%;">
+            <div id="observablehq-gdp_key_2000-4b0de616"></div>
+        </div>
+        <div style="width: 30%; margin-right: 3%;">
+            <div id="observablehq-indivint_key_2000-4b0de616"></div>
+        </div>
+        <div>
+            <div id="observablehq-mobile_key_2000-4b0de616"></div>
+        </div>
+    </div>
+    <div class="container" style="display: flex; height: 200px;">
+        <div style="width: 32%;">
+            <div id="observablehq-gdp-4b0de616"></div>
+        </div>
+        <div style="width: 32%;">
+            <div id="observablehq-indivint-4b0de616"></div>
+        </div>
+        <div>
+            <div id="observablehq-cellular-4b0de616"></div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/361b8162b24ae278.js?v=3";
+        new Runtime().module(define, name => {
+            if (name === "viewof Year") return new Inspector(document.querySelector("#observablehq-viewof-Year-4b0de616"));
+            if (name === "gdp_key_2000") return new Inspector(document.querySelector("#observablehq-gdp_key_2000-4b0de616"));
+            if (name === "gdp") return new Inspector(document.querySelector("#observablehq-gdp-4b0de616"));
+            if (name === "indivint_key_2000") return new Inspector(document.querySelector("#observablehq-indivint_key_2000-4b0de616"));
+            if (name === "indivint") return new Inspector(document.querySelector("#observablehq-indivint-4b0de616"));
+            if (name === "mobile_key_2000") return new Inspector(document.querySelector("#observablehq-mobile_key_2000-4b0de616"));
+            if (name === "cellular") return new Inspector(document.querySelector("#observablehq-cellular-4b0de616"));
+        });
+    </script>
+    <h3>Not the same level of improvement in accessibility to education</h3>
+    <p>The internet has facilitated increased access to education. Traditionally, education has only been accessible to
+        those enrolled in educational institutions, and only at certain times of the day and certain days of the week.
+        With the advent of streaming videos on the internet, educational websites, like Khan Academy, have started to
+        become household names. Besides Khan Academy, there are an enormous number of educational channels available on
+        YouTube that teach anything from calculus to cooking. Nowadays, anyone with a sufficiently strong internet
+        connection can learn from wherever they are and at any time without paying or enrolling in an educational
+        institution. Despite this seemingly high availability to education via the internet, there are still some places
+        in the world where a significant portion of primary-school-aged children are out of school as shown in the graph
+        below, and there a number of possible causes for this problem. For one, children out of school may not have
+        access to internet and technology to be able to learn at their convenience. Secondly, children do not generally
+        have the discipline to sit and learn by themselves and require assistance from a teacher. This implies that,
+        even with the internet, school is and will likely be the primary method of education for children all over the
+        world.</p>
+    <div id="observablehq-chart-73e4d2d0"></div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/361b8162b24ae278.js?v=3";
+        new Runtime().module(define, name => {
+          if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-73e4d2d0"));
+        });
+        </script>
+    <h3>Direct comparison between the two variables</h3>
+    <p>Having looked at the accessibility to technology and to education separately, we thought it'd be more
+        straightforward to put the two variables together. The graphs below represent people in different world regions'
+        access to the internet and education in 2000 and 2020. We'd thought that since the tech sector and education
+        have had more overlaps in recent years, the two variables would show a higher correlation in 2020. However, what
+        the graphs have shown is that they had a higher correlation in 2000.</p>
+    <div class="container" style="display: flex; height: 80px;">
+        <div style="width: 50%; margin-left: 2%; margin-right: 3%;">
+            <div id="observablehq-key-42ff50ea"></div>
+        </div>
+        <div style="width: 50%; margin-right: 3%;">
+            <div id="observablehq-key1-42ff50ea"></div>
+        </div>
+    </div>
+    <div class="container" style="display: flex; height: 310px;">
+        <div style="width: 50%;">
+            <div id="observablehq-groupChart-42ff50ea"></div>
+        </div>
+        <div style="width: 50%;">
+            <div id="observablehq-groupChart1-42ff50ea"></div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/361b8162b24ae278.js?v=3";
+        new Runtime().module(define, name => {
+          if (name === "key") return new Inspector(document.querySelector("#observablehq-key-42ff50ea"));
+          if (name === "groupChart") return new Inspector(document.querySelector("#observablehq-groupChart-42ff50ea"));
+          if (name === "key1") return new Inspector(document.querySelector("#observablehq-key1-42ff50ea"));
+          if (name === "groupChart1") return new Inspector(document.querySelector("#observablehq-groupChart1-42ff50ea"));
+        });
+        </script>
+    <P>Perhaps it's clearer if we can play with the data a little bit. The y-axis of the two graphs below is the
+        percentage of people with access to the internet. If we sort the bar by ascending order of percentage of
+        enrollment, we can see that in 2000, the order of is very similar to the ascending order of accessibility to the
+        internet. If we look at the graph in 2020, we do not see that much of a difference in the y-axis value of the
+        bars if we sort it in the order of percentage of enrollment. It is rational when one thinks about the fact that
+        the internet has transformed from a luxury good to a near necessity in just two decades, while education has not
+        changed so much. Thus, in 2000, only people with higher incomes can have access to the internet and education.
+        In 2020, the Internet has become more available to people with lower incomes, but people in poverty still rarely
+        can receive an education.</P>
+    <div id="observablehq-viewof-order-22e02787"></div>
+    <div class="container" style="display: flex; height: 300px; margin-top: 2%;">
+        <div style="width: 40%;">
+            <div id="observablehq-updateChart-22e02787"></div>
+        </div>
+        <div style="width: 40%;">
+            <div id="observablehq-updateChart1-22e02787"></div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/361b8162b24ae278.js?v=3";
+        new Runtime().module(define, name => {
+          if (name === "viewof order") return new Inspector(document.querySelector("#observablehq-viewof-order-22e02787"));
+          if (name === "updateChart") return new Inspector(document.querySelector("#observablehq-updateChart-22e02787"));
+          if (name === "updateChart1") return new Inspector(document.querySelector("#observablehq-updateChart1-22e02787"));
+          return ["update","update1"].includes(name);
+        });
+        </script>
+    <h3>Can the widespread usage of the internet helps promote access to education?</h3>
+    <p>What has become clear from the data analysis is that there is only a weak relationship between accessibility to
+        technology and education, at least a weaker one than we have thought of. It may be because the more recent
+        open-source data is from 2020, the year when Covid started. If we have data that are more recent, we might see a
+        strengthening in the relationship between them. Nevertheless, one thing worth thinking of is how we can exploit
+        the widespread usage of the internet to promote education. In other words, how can the advance in technology
+        help in providing high-quality, low-cost education to people around the world? We can see such an idea being
+        carried out in higher education. For example, the Johns Hopkins Engineering for Professionals program offers
+        online and part-time master’s degrees and certificates in 22 programs spanning multiple engineering disciplines
+        and applied science. The program may not necessarily be low-cost, but it aims to provide a high-quality online
+        learning experience. It'd worthwhile to explore ways the technology can help not only in universities but also
+        in primary & secondary schools, especially schools in the third-world countries.</p>
+    <h3>Ways to strengthen the impact of tech on education</h3>
+    <p>Due to the possible consequences of technology use in classrooms, schools must take caution in how technology is
+        integrated into lessons. Students can finish assignments, watch the latest sports matches, and message their
+        friends all while sitting in lecture. In this way, technology distracts students from focusing on what is
+        important. Furthermore, technology also allows students to multi-task, which does more harm than good by
+        inhibiting focus on one particular task. In order to benefit from technology, educators have been adapting their
+        courses and teaching style to use technology in ways that facilitate learning. For example, many educators have
+        adopted a flipped classroom format -- this means students learn at home via videos and come to class to solve
+        problems. This is beneficial to students because they get exposure to the subject at their convenience and build
+        a better understanding by solving problems while getting immediate feedback from their instructor. According to
+        results from the Program for International Student Assessment (PISA) from 2018, students with access to a
+        computer they can use for schoolwork report higher scores in mathematics compared to students without access.
+        The difference in average scores between having access to a computer that can be used for schoolwork and not
+        having access is shown in the Y-axis of the scatterplot below. The X-axis indicates an index of computer usage
+        (negative values do not indicate negative usage). The scatterplot shows that the difference in test scores from
+        access to computers is increases with computer usage, but seems to decrease after a certain point. This suggests
+        too much computer usage could be detrimental to education.</p>
+    <div id="observablehq-tech_use_scatterplot-7c637ff8"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/361b8162b24ae278.js?v=3";
+        new Runtime().module(define, name => {
+          if (name === "tech_use_scatterplot") return new Inspector(document.querySelector("#observablehq-tech_use_scatterplot-7c637ff8"));
+        });
+        </script>
+
+    <h3>Conclusion & analysis</h3>
+    <p>With the increase in access to the internet in the past two decades, this has become almost a necessity instead
+        of a luxury. There has been a weakening correlation between a country's GDP and the percentage of people with
+        access to internet as well as number of mobile cellular subscriptions. There has also been an increase in
+        quality educational resources available online, although the increased prevalence of these resources has not
+        necessarily resulted in an increase in access to education. While more people in varying economic statuses have
+        access to the internet, people with lower incomes still have decreased access to education.<br>
+
+        Given the technologies developed during the pandemic to support online education, there are also opportunities
+        to use these developments to increase access to education. These were initially developed to increase access to
+        education when traditional, in person, forms were not as accessible. Despite the return to both in person and
+        hybrid forms of education, we can continue to use these and it is promising to see the potential of applications
+        of these technologies to increase accessibility to education regardless of economic status.<br>
+
+        We acknowledge the fact that there are several factors that contribute to accessibility to education, but we can
+        leverage the increase in access to internet and technology to help increase access to quality education.</p>
+
+</body>
+
+</html>
